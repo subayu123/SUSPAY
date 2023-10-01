@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Transaction History Styles */
+        .transaction-history {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .transaction-history h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Transaction List Styles */
+        .transaction-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .transaction {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .transaction:last-child {
+            border-bottom: none;
+        }
+
+        .transaction-date {
+            font-weight: bold;
+        }
+
+        .transaction-amount {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="transaction-history">
+        <h2>Transaction History</h2>
+        <ul class="transaction-list">
+            <li class="transaction">
+                <span class="transaction-date">2023-09-15</span>
+                <span class="transaction-amount">$50.00</span>
+            </li>
+            <li class="transaction">
+                <span class="transaction-date">2023-09-10</span>
+                <span class="transaction-amount">$30.00</span>
+            </li>
+            <li class="transaction">
+                <span class="transaction-date">2023-09-05</span>
+                <span class="transaction-amount">$25.00</span>
+            </li>
+            <!-- Add more transactions here -->
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+.dropdown *{
+    box-sizing: border-box;
+}
+.banko{
+    background:#2a2f3b;
+    color: white;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 600px;
+    
+
+}
+.banko-clicked{
+    border: 2px #26489a solid;
+    box-shadow:0.0.0.8em   #26489a;
+}
+.banko:hover {
+    background: rgb(35, 30, 80);
+}
+a  img{
+    padding: 10px;
+
+}
+
+.EEE{
+    width: 200px;
+    background: gainsboro;
+    position: absolute;
+    bottom: 10px;
+    left: 400px;
+    font-size: larger;
+    border-radius: 10px;
+    
+}
+.EEE:hover{
+    background: rgb(15, 98, 15);
+    color: white;
+    
+}
+body{
+    background: linear-gradient(90deg, #020618 40.1%,#090f0c 60%);
+}
+
+    </style>
+</head>
+<body  text="azure">
+    <table align="center">
+        <tr>
+            <td class="head">
+                <H1>CHOOSE YOUR BANK</H1>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <br>
+        <tr>
+            <td>
+            <p><h3>Select  your bank with register mobile number</h3></p>
+        </td>
+        </tr>
+        <tr>
+            <td>
+            <a href="#"><img src="Bank-of-Baroda-Logo.png" alt="Bank of boroda" height="70" width="70"></a>
+            <a href="#"><img src="sbi.png" alt="State bank of India" height="70" width="70"></a>
+            <a href="#"><img src="idbi.png" alt="IDBI" height="70" width="70"></a>
+            <a href="#"><img src="punjab-national-bank-pnb-bank-logo-free-free-vector.jpg" alt="PUNJAB NATIONAL BANK" height="70" width="70"></a>
+            <a href="#"><img src="yes.png" alt="YES BANK" height="70" width="70"></a>
+            <a href="#"><img src="icici.png" alt="ICICI BANK" height="80" width="80"></a>
+        </td>
+        </tr>
+        <tr>
+            <td>
+            <a href="#"><img src="Bank-of-India-logo.png" alt="Bank of India" height="70" width="70"></a>
+            <a href="#"><img src="uco.jpg" alt="UCO" height="70" width="70"></a>
+            <a href="#"><img src="hdfc.png" alt="HDFC" height="70" width="70"></a>
+            <a href="#"><img src="can.jpg" alt="Canara-Bank" height="70" width="70"></a>
+            <a href="#"><img src="airtel.png" alt="airtel_payment_bank_" height="70" width="70"></a>
+            <a href="#"><img src="china.png" alt="Bank of china" height="70" width="70"></a>
+        </td>
+        </tr>
+       <tr>
+        <td>
+            <label for="bank"><h2>Select from all other bank:</h2></label>
+            </td>
+            </tr>
+            <tr>
+                <td>
+<select class="banko" id="bank">
+  <option value="Bank of Maharashtra">Bank of Maharashtra</option>
+  <option value="Indian Overseas Bank">Indian Overseas Bank</option>
+  <option value="Bandhan Bank Ltd" disabled>Bandhan Bank Ltd</option>
+  <option value="City Union Bank Ltd" selected>City Union Bank Ltd</option>
+  <option value="Induslnd Bank Ltd" selected>Induslnd Bank Ltd</option>
+  <option value="Jammu & Kashmir Bank" selected>Jammu & Kashmir Bank</option>
+  <option value="Nainital Bank " selected>Nainital Bank </option>
+  <option value="Unity Small Finance Bank " selected>Unity Small Finance Bank </option>
+  <option value="Arunachal Pradesh Rural " selected>Arunachal Pradesh Rural </option>
+</select>
+        </td>
+       </tr>
+       <tr align="center" style="padding: 50px;">
+        <td>
+            <input type="submit" value="PROCEED" class="EEE">
+        </td>
+       </tr>
+    </table>
+</body>
+</html>

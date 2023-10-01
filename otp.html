@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SUSPAY Login</title>
+    <script>
+        // Simulate OTP generation and submission (for demonstration purposes)
+        function generateOTP() {
+            return Math.floor(1000 + Math.random() * 9000); // A 4-digit OTP
+        }
+
+        function sendOTP() {
+            var mobileNumber = document.getElementById("mobileNumber").value;
+            var otp = generateOTP();
+
+            // Simulate sending OTP (you should replace this with actual SMS or email sending)
+            alert("OTP sent to " + mobileNumber + ": " + otp);
+
+            // Store the OTP and mobile number in session or cookies (not secure, for demonstration only)
+            sessionStorage.setItem("otp", otp);
+            sessionStorage.setItem("mobileNumber", mobileNumber);
+
+            // Redirect to OTP verification page
+            window.location.href = "otp-verification.html";
+        }
+    </script>
+</head>
+<body>
+    <h1>SUSPAY Login</h1>
+    <p>Enter your mobile number to receive OTP:</p>
+    
+    <form>
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" required>
+        <br><br>
+      
+        <br>
+    <button type="button" onclick="sendOTP()">get otp</button><br><br>
+    <input type="text" name="otp" maxlength="6"><br><br>
+    <a href="main.html">  <button type="button" >submit</button></a><br>
+    </form>
+</body>
+</html>
